@@ -11,7 +11,7 @@ Load static images and gifs and display in console output
 
 ### Installation
 
-#### Download Package to your project
+#### Download package to your project
 
 ```bash
 go get github.com/nfsarch33/console-image-loader
@@ -28,6 +28,7 @@ import (
 )
 
 func main() {
+        // console_image.ShowImg() takes the image path param, change this to your image path.
 	if err := console_image.ShowImg("pkg/console_image/test_image/goku.gif"); err != nil {
 		fmt.Errorf("ShowImg() error = %v", err)
 	}
